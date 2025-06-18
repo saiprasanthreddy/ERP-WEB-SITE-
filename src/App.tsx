@@ -12,6 +12,10 @@ import StudentDashboard from "./pages/student/StudentDashboard";
 import StudentProfile from "./pages/student/StudentProfile";
 import CourseRegistration from "./pages/student/CourseRegistration";
 import AttendanceTracker from "./pages/student/AttendanceTracker";
+import ExamSchedule from "./pages/student/ExamSchedule";
+import Results from "./pages/student/Results";
+import FeeStatus from "./pages/student/FeeStatus";
+import Notices from "./pages/student/Notices";
 import FacultyDashboard from "./pages/faculty/FacultyDashboard";
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import NotFound from "./pages/NotFound";
@@ -39,10 +43,10 @@ const App = () => (
               <Route path="profile" element={<StudentProfile />} />
               <Route path="courses" element={<CourseRegistration />} />
               <Route path="attendance" element={<AttendanceTracker />} />
-              <Route path="exams" element={<div className="p-6">Student Exams - Coming Soon</div>} />
-              <Route path="results" element={<div className="p-6">Student Results - Coming Soon</div>} />
-              <Route path="fees" element={<div className="p-6">Student Fees - Coming Soon</div>} />
-              <Route path="notices" element={<div className="p-6">Student Notices - Coming Soon</div>} />
+              <Route path="exams" element={<ExamSchedule />} />
+              <Route path="results" element={<Results />} />
+              <Route path="fees" element={<FeeStatus />} />
+              <Route path="notices" element={<Notices />} />
             </Route>
 
             {/* Faculty Routes */}
