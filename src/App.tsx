@@ -9,6 +9,9 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import DashboardLayout from "./components/Layout/DashboardLayout";
 import Login from "./pages/auth/Login";
 import StudentDashboard from "./pages/student/StudentDashboard";
+import StudentProfile from "./pages/student/StudentProfile";
+import CourseRegistration from "./pages/student/CourseRegistration";
+import AttendanceTracker from "./pages/student/AttendanceTracker";
 import FacultyDashboard from "./pages/faculty/FacultyDashboard";
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import NotFound from "./pages/NotFound";
@@ -33,9 +36,9 @@ const App = () => (
               </ProtectedRoute>
             }>
               <Route path="dashboard" element={<StudentDashboard />} />
-              <Route path="profile" element={<div className="p-6">Student Profile - Coming Soon</div>} />
-              <Route path="courses" element={<div className="p-6">Student Courses - Coming Soon</div>} />
-              <Route path="attendance" element={<div className="p-6">Student Attendance - Coming Soon</div>} />
+              <Route path="profile" element={<StudentProfile />} />
+              <Route path="courses" element={<CourseRegistration />} />
+              <Route path="attendance" element={<AttendanceTracker />} />
               <Route path="exams" element={<div className="p-6">Student Exams - Coming Soon</div>} />
               <Route path="results" element={<div className="p-6">Student Results - Coming Soon</div>} />
               <Route path="fees" element={<div className="p-6">Student Fees - Coming Soon</div>} />
