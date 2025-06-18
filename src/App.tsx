@@ -17,7 +17,14 @@ import Results from "./pages/student/Results";
 import FeeStatus from "./pages/student/FeeStatus";
 import Notices from "./pages/student/Notices";
 import FacultyDashboard from "./pages/faculty/FacultyDashboard";
+import FacultyProfile from "./pages/faculty/FacultyProfile";
+import SubjectAllocation from "./pages/faculty/SubjectAllocation";
+import AttendanceMarking from "./pages/faculty/AttendanceMarking";
+import MarkEntry from "./pages/faculty/MarkEntry";
+import CourseMaterials from "./pages/faculty/CourseMaterials";
 import AdminDashboard from "./pages/admin/AdminDashboard";
+import StudentManagement from "./pages/admin/StudentManagement";
+import FacultyManagement from "./pages/admin/FacultyManagement";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -56,11 +63,11 @@ const App = () => (
               </ProtectedRoute>
             }>
               <Route path="dashboard" element={<FacultyDashboard />} />
-              <Route path="profile" element={<div className="p-6">Faculty Profile - Coming Soon</div>} />
-              <Route path="subjects" element={<div className="p-6">Faculty Subjects - Coming Soon</div>} />
-              <Route path="attendance" element={<div className="p-6">Faculty Attendance - Coming Soon</div>} />
-              <Route path="marks" element={<div className="p-6">Mark Entry - Coming Soon</div>} />
-              <Route path="materials" element={<div className="p-6">Course Materials - Coming Soon</div>} />
+              <Route path="profile" element={<FacultyProfile />} />
+              <Route path="subjects" element={<SubjectAllocation />} />
+              <Route path="attendance" element={<AttendanceMarking />} />
+              <Route path="marks" element={<MarkEntry />} />
+              <Route path="materials" element={<CourseMaterials />} />
             </Route>
 
             {/* Admin Routes */}
@@ -70,8 +77,8 @@ const App = () => (
               </ProtectedRoute>
             }>
               <Route path="dashboard" element={<AdminDashboard />} />
-              <Route path="students" element={<div className="p-6">Student Management - Coming Soon</div>} />
-              <Route path="faculty" element={<div className="p-6">Faculty Management - Coming Soon</div>} />
+              <Route path="students" element={<StudentManagement />} />
+              <Route path="faculty" element={<FacultyManagement />} />
               <Route path="courses" element={<div className="p-6">Course Management - Coming Soon</div>} />
               <Route path="exams" element={<div className="p-6">Exam Management - Coming Soon</div>} />
               <Route path="fees" element={<div className="p-6">Fee Management - Coming Soon</div>} />
